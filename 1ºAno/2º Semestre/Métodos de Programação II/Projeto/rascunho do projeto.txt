@@ -1,0 +1,175 @@
+/* int pos=0;      // Posição inicializada a 0
+
+        printf("\nQue tarefa pretende consultar?\n");
+
+        for(int i=0;i<total;i++){
+
+            int j=0;           
+            printf("\n%d.%s",j,t[i].nome_tarefa);
+            j++;
+
+        }
+        printf("\n");
+        scanf("%d",&pos);
+
+        printf("\nDescricao: %s",t[pos].descricao_tarefa);
+        printf("\nTipo de Tarefa: %s",t[pos].tipo_tarefa);
+        printf("\nSubtipo de Tarefa: %s",t[pos].subtipo_tarefa);
+        printf("\nPrioridade: %s",t[pos].prioridade);
+        printf("\nEstado da Tarefa: %s",t[pos].estado_tarefa);
+        printf("\nData de Inicio ( dd/mm/aa ): %d %d %d",t[pos].data_inicio_dd,t[pos].data_inicio_mm,t[pos].data_inicio_aa);
+        printf("\nData de Fim ( dd/mm/aa ): %d %d %d",t[pos].data_fim_dd,t[pos].data_fim_mm,t[pos].data_fim_aa);
+        printf("\nHora de Inicio: %d %d",t[pos].hora_inicio_h,t[pos].hora_inicio_min);
+        printf("\nHora de Fim: %d %d",t[pos].hora_fim_h,t[pos].hora_fim_min);
+        printf("\n"); */
+
+
+/*
+        int pos=0;
+        int seleciona=0;
+
+        printf("\nQue tarefa pretende editar?\n\n");
+
+        for(int i=0;i<total;i++){
+
+            int j=0;
+            j++;
+            printf("\n%d.%s",i,t[i].nome_tarefa);
+        
+        }
+        printf("\n");
+        scanf("%d",&pos);
+
+        int i=pos;
+
+        printf("\nO que deseja alterar?\n\n1.Nome da Tarefa\n2.Descricao\n3.Tipo de Tarefa\n4.Subtipo de Tarefa\n5.Prioridade da Tarefa\n6.Estado da Tarefa\n7.Data de Inicio\n8.Data de Fim\n9.Hora de Inicio\n10.Hora de Fim\n\n");
+        scanf("%d",&seleciona);
+
+        switch(seleciona){
+
+            case 1:
+
+            printf("\nEscreva um novo nome da tarefa: ");
+            scanf("%s",&t[i].nome_tarefa);
+
+            printf("\nO novo nome da tarefa: %s",t[i].nome_tarefa);
+            break;
+
+            case 2:
+
+            printf("\nEscreva uma nova descricao: ");
+            scanf("%s",&t[i].descricao_tarefa);
+
+            printf("\nA sua nova descricao: %s",t[i].descricao_tarefa);
+            break;
+
+            case 3:
+
+            printf("\nAltere o tipo de tarefa ( Profissional ou Pessoal): ");
+            scanf("%s",&t[i].tipo_tarefa);
+
+            printf("O novo tipo de tarefa: %s",t[i].tipo_tarefa);
+            break;
+
+            case 4:
+
+            printf("\nAltere o subtipo de tarefa ( Desporto, Estudos, Casa, etc...): ");
+            scanf("%s",&t[i].subtipo_tarefa);
+
+            printf("\nO novo subtipo de tarefa: %s",t[i].subtipo_tarefa);
+            break;
+
+            case 5:
+
+            printf("\nAltere a sua prioridade:\n1.Alta\n2.Media.\n3.Baixa\n");
+            scanf("%d",&prio);
+
+            prioridade(prio,i);
+            printf("\nA nova prioridade da tarefa: %s",t[i].prioridade);
+            break;
+
+            case 6:
+
+            printf("\nEstado da Tarefa\n1.Concluido\n2.Pendente\n");
+            scanf("%d",&est);
+
+            estado(est,i);
+            printf("%s",t[i].estado_tarefa);
+            break;
+
+            case 7:
+
+            printf("\nIntroduza a nova data de inicio ( dd/mm/aa ): ");
+            scanf("%d %d %d",&t[i].data_inicio_dd,&t[i].data_inicio_mm,&t[i].data_inicio_aa);
+
+            printf("\nA sua nova data de inicio ( dd/mm/aa ): %d %d %d",t[i].data_inicio_dd,t[i].data_inicio_mm,t[i].data_inicio_aa);
+            break;
+
+            case 8:
+
+            printf("\nIntroduza a nova data de fim ( dd/mm/aa ): ");
+            scanf("%d %d %d",&t[i].data_fim_dd,&t[i].data_fim_mm,&t[i].data_fim_aa);
+
+            printf("\nA sua nova data de fim ( dd/mm/aa ): %d %d %d",t[i].data_fim_dd,t[i].data_fim_mm,t[i].data_fim_aa);
+            break;
+
+            case 9:
+
+            printf("\nIntroduza a nova hora de inicio: ");
+            scanf("%d %d",&t[i].hora_inicio_h,&t[i].hora_inicio_min);
+
+            printf("\nA sua nova hora de inicio: %d %d",t[i].hora_inicio_h,t[i].hora_inicio_min);
+            break;
+
+            case 10:
+
+            printf("\nIntroduza a nova hora de fim: ");
+            scanf("%d %d",&t[i].hora_fim_h,&t[i].hora_fim_min);
+
+            printf("\nA sua nova hora de fim: %d %d",t[i].hora_fim_h,t[i].hora_fim_min);
+            break;
+
+        }
+        */
+
+
+           /* int i=0;
+
+            printf("\nNome da Tarefa: ");
+            scanf("%s",t[i].nome_tarefa);
+
+            printf("\nDescricao: ");
+            scanf("%s",t[i].descricao_tarefa);
+
+            printf("\nTipo de Tarefa ( Profissional ou Pessoal): ");
+            scanf("%s",t[i].tipo_tarefa);
+
+            printf("\nSubtipo de Tarefa ( Desporto, Estudos, Casa, etc...): ");
+            scanf("%s",t[i].subtipo_tarefa);
+
+            printf("\nPrioridade:\n\n1.Alta\n2.Media.\n3.Baixa\n\n");
+            scanf("%d",&prio);
+
+            prioridade(prio,i);
+
+            printf("\nEstado da Tarefa\n\n1.Concluido\n2.Pendente\n\n");
+            scanf("%d",&est);
+
+            estado(est,i);
+
+            printf("\nData de Inicio ( dd/mm/aa ): ");
+            scanf("%d %d %d",&t[i].data_inicio_dd,&t[i].data_inicio_mm,&t[i].data_inicio_aa);
+
+            printf("\nData de Fim ( dd/mm/aa ): ");
+            scanf("%d %d %d",&t[i].data_fim_dd,&t[i].data_fim_mm,&t[i].data_fim_aa);
+
+            printf("\nHora de Inicio: ");
+            scanf("%d %d",&t[i].hora_inicio_h,&t[i].hora_inicio_min);
+
+            printf("\nHora de Fim: ");
+            scanf("%d %d",&t[i].hora_fim_h,&t[i].hora_fim_min);
+
+            i++;
+            total=i;  
+
+            */
