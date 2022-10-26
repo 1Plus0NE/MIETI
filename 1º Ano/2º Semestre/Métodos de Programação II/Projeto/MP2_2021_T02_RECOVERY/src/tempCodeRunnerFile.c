@@ -1,1 +1,0 @@
-else if(t[i].data_fim_dd<t[i].data_inicio_dd && t[i].data_fim_mm<=t[i].data_inicio_mm && t[i].data_fim_aa<=t[i].data_inicio_aa)
